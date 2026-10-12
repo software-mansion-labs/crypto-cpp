@@ -268,7 +268,7 @@ constexpr auto HexCharArrayToBigInt() {
 }  // namespace bigint
 
 template <char... Chars>
-static constexpr auto operator"" _Z() {
+static constexpr auto operator""_Z() {
   // This function is implemented as wrapper that calls the actual
   // implementation and stores it in a constexpr variable as we want to force
   // the evaluation to be done in compile time. We need to have the function

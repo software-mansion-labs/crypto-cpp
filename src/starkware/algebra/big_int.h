@@ -141,7 +141,7 @@ std::ostream& operator<<(std::ostream& os, const BigInt<N>& bigint);
   0x73eda753299d7d483339d80809a1d80553bda402fffe5bfeffffffff00000001_Z;
 */
 template <char... Chars>
-static constexpr auto operator"" _Z();
+static constexpr auto operator""_Z();
 
 #include "starkware/algebra/big_int.inl"
 
